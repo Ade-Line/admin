@@ -16,3 +16,15 @@
 .container{
     margin-top: 25px;
 }
+.table th{
+    text-align: center;
+}
+
+.table td{
+    text-align: center;
+}
+.fas{
+    margin-left: 20px;
+    color: rgb(14, 131, 160);
+    font-size: 20px;
+}
