@@ -59,7 +59,7 @@
         </div>
     </section>
 
-    <!-- MODAL -->
+    <!-- MODAL BOUTON AJOUT-->
 
     <div class="modal fade" id="addtitlemodal">
         <div class="modal-dialog modal-lg">
@@ -139,10 +139,12 @@
                                 <th scope="row">1</th>
                                 <td>Mark</td>
                                 <td>Otto</td>
-                                <td>3</td>
+                                <td>Blues</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
-                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
+                                <td><a href="#"><i class="fas fa-eye" data-toggle="modal"
+                                            data-target="#addviewmodal"></i></a>
+                                    <a href="#"><i class="fas fa-pen"></i></a><a href="#"><i
+                                            class="fas fa-trash-alt"></i></a>
                                 </td>
                             </tr>
                             <tr>
@@ -244,21 +246,61 @@
 
     </div>
 
+    <!-- MODAL BOUTON viewport -->
+
+    <div class="modal fade" id="addviewmodal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title">Détails</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">Artiste</label>
+                            <input type="text" class="form-control" value="Mark">
+                        </div>
+                        <div class="form-group">
+                            <label for="album">Album</label>
+                            <input type="text" class="form-control" value="Otto">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Genre</label>
+                            <input type="text" class="form-control" value="Blues">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="boby">Détails</label>
+                            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
+                                nascetur ridiculus mus.</p>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <!-- PAGINATION -->
 
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
-          <li class="page-item disabled">
-            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
-          </li>
-          <li class="page-item"><a class="page-link" href="#">1</a></li>
-          <li class="page-item"><a class="page-link" href="#">2</a></li>
-          <li class="page-item"><a class="page-link" href="#">3</a></li>
-          <li class="page-item">
-            <a class="page-link" href="#">Next</a>
-          </li>
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
         </ul>
-      </nav>
+    </nav>
 
     <!-- SCRIPT -->
 
@@ -275,8 +317,7 @@
 
 
     <script>
-
-    CKEDITOR.replace( 'editor1' );        
+        CKEDITOR.replace('editor1');
     </script>
 
 
