@@ -142,10 +142,12 @@
                                 <td>Blues</td>
                                 <td>12</td>
                                 <td><a href="#"><i class="fas fa-eye" data-toggle="modal"
-                                            data-target="#addviewmodal"></i></a>
-                                    <a href="#"><i class="fas fa-pen"></i></a><a href="#"><i
-                                            class="fas fa-trash-alt"></i></a>
-                                </td>
+                                    data-target="#addviewmodal"></i></a>
+                            <a href="#"><i class="fas fa-pen" data-toggle="modal"
+                                    data-target="#addpenmodal"></i></a>
+                            <a href="#"><i class="fas fa-trash-alt" data-toggle="modal"
+                                    data-target="#addtrashmodal"></i></a>
+                        </td>
                             </tr>
                             <tr>
                                 <th scope="row">22</th>
@@ -153,9 +155,13 @@
                                 <td>Thornton</td>
                                 <td>Reggae</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
-                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
-                                </td>
+                                <td><a href="#"><i class="fas fa-eye" data-toggle="modal"
+                                    data-target="#addviewmodal"></i></a>
+                            <a href="#"><i class="fas fa-pen" data-toggle="modal"
+                                    data-target="#addpenmodal"></i></a>
+                            <a href="#"><i class="fas fa-trash-alt" data-toggle="modal"
+                                    data-target="#addtrashmodal"></i></a>
+                        </td>
 
                             </tr>
                             <tr>
@@ -164,9 +170,13 @@
                                 <td>the Bird</td>
                                 <td>Classique</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
-                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
-                                </td>
+                                <td><a href="#"><i class="fas fa-eye" data-toggle="modal"
+                                    data-target="#addviewmodal"></i></a>
+                            <a href="#"><i class="fas fa-pen" data-toggle="modal"
+                                    data-target="#addpenmodal"></i></a>
+                            <a href="#"><i class="fas fa-trash-alt" data-toggle="modal"
+                                    data-target="#addtrashmodal"></i></a>
+                        </td>
                             </tr>
                             <tr>
                                 <th scope="row">24</th>
@@ -174,9 +184,13 @@
                                 <td>the Bird</td>
                                 <td>Disco</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
-                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
-                                </td>
+                                <td><a href="#"><i class="fas fa-eye" data-toggle="modal"
+                                    data-target="#addviewmodal"></i></a>
+                            <a href="#"><i class="fas fa-pen" data-toggle="modal"
+                                    data-target="#addpenmodal"></i></a>
+                            <a href="#"><i class="fas fa-trash-alt" data-toggle="modal"
+                                    data-target="#addtrashmodal"></i></a>
+                        </td>
                             </tr>
                             <tr>
                                 <th scope="row">25</th>
@@ -184,9 +198,13 @@
                                 <td>the Bird</td>
                                 <td>Jazz</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
-                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
-                                </td>
+                                <td><a href="#"><i class="fas fa-eye" data-toggle="modal"
+                                    data-target="#addviewmodal"></i></a>
+                            <a href="#"><i class="fas fa-pen" data-toggle="modal"
+                                    data-target="#addpenmodal"></i></a>
+                            <a href="#"><i class="fas fa-trash-alt" data-toggle="modal"
+                                    data-target="#addtrashmodal"></i></a>
+                        </td>
                             </tr>
                             <tr>
                                 <th scope="row">26</th>
@@ -194,9 +212,13 @@
                                 <td>the Bird</td>
                                 <td>Hip-Hop</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
-                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
-                                </td>
+                                <td><a href="#"><i class="fas fa-eye" data-toggle="modal"
+                                    data-target="#addviewmodal"></i></a>
+                            <a href="#"><i class="fas fa-pen" data-toggle="modal"
+                                    data-target="#addpenmodal"></i></a>
+                            <a href="#"><i class="fas fa-trash-alt" data-toggle="modal"
+                                    data-target="#addtrashmodal"></i></a>
+                        </td>
                             </tr>
                        
                         </tbody>
@@ -206,7 +228,7 @@
         </div>
     </div>
 
-    <!-- MODAL BOUTON viewport -->
+    <!-- MODAL BOUTON view -->
 
     <div class="modal fade" id="addviewmodal">
         <div class="modal-dialog modal-lg">
@@ -243,6 +265,87 @@
             </div>
         </div>
     </div>
+
+    <!-- MODAL BUTTON PEN -->
+
+    <div class="modal fade" id="addpenmodal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title">Modifier la saisie</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">Artiste</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="album">Album</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Genre</label>
+                            <select class="form-control">
+                                <option value="">...</option>
+                                <option value="">Blues</option>
+                                <option value="">Classique</option>
+                                <option value="">Disco</option>
+                                <option value="">Hip-Hop</option>
+                                <option value="">Jazz</option>
+                                <option value="">Métal</option>
+                                <option value="">Pop</option>
+                                <option value="">Punk</option>
+                                <option value="">Rap</option>
+                                <option value="">Reggae</option>
+                                <option value="">Rock</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="image">Import Image</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-imput" id="image">
+                                <label for="image" class="custom-file-label">Choix du répertoire</label>
+                            </div>
+                            <small class="form-text text-muted">Taille maxi 3mb</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="boby">Détails</label>
+                            <textarea name="editor2" class="form-control"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Enregistrer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL BUTTON TRASH -->
+
+    <div class="modal fade" id="addtrashmodal" tabindex="-1" role="dialog" aria-labelledby="addtrashmodal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="addtrashmodal">Suppression</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Etes-vous sûr de vouloir supprimer cette ligne?
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
+              <button type="button" class="btn btn-primary">Oui</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- PAGINATION -->
 
