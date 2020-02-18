@@ -83,17 +83,18 @@
                         <div class="form-group">
                             <label for="category">Genre</label>
                             <select class="form-control">
-                                <option value="Blues"></option>
-                                <option value="Classique"></option>
-                                <option value="Disco"></option>
-                                <option value="Hip-Hop"></option>
-                                <option value="Jazz"></option>
-                                <option value="Métal"></option>
-                                <option value="Pop"></option>
-                                <option value="Punk"></option>
-                                <option value="Rap"></option>
-                                <option value="Reggae"></option>
-                                <option value="Rock"></option>
+                                <option value="">...</option>
+                                <option value="">Blues</option>
+                                <option value="">Classique</option>
+                                <option value="">Disco</option>
+                                <option value="">Hip-Hop</option>
+                                <option value="">Jazz</option>
+                                <option value="">Métal</option>
+                                <option value="">Pop</option>
+                                <option value="">Punk</option>
+                                <option value="">Rap</option>
+                                <option value="">Reggae</option>
+                                <option value="">Rock</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -105,10 +106,13 @@
                             <small class="form-text text-muted">Taille maxi 3mb</small>
                         </div>
                         <div class="form-group">
-                            <label for="boby"></label>
-
+                            <label for="boby">Détails</label>
+                            <textarea name="editor1" class="form-control"></textarea>
                         </div>
                     </form>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Enregistrer</button>
                 </div>
             </div>
         </div>
@@ -250,6 +254,13 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.ckeditor.com/4.13.1/standard/ckeditor.js"></script>
+
+
+    <script>
+
+    CKEDITOR.replace( 'editor1' );        
     </script>
 
 
