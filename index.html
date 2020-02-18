@@ -45,6 +45,75 @@
         </div>
     </nav>
 
+    <!-- BUTTON -->
+
+    <section class="button">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <a href="#" class="btn btn-secondary btn-block" data-toggle="modal" data-target="#addtitlemodal">
+                        <i class="fas fa-plus"></i>Ajout Vinyle
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL -->
+
+    <div class="modal fade" id="addtitlemodal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-secondary text-white">
+                    <h5 class="modal-title">Ajout Vinyle</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="title">Artiste</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="album">Album</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Genre</label>
+                            <select class="form-control">
+                                <option value="Blues"></option>
+                                <option value="Classique"></option>
+                                <option value="Disco"></option>
+                                <option value="Hip-Hop"></option>
+                                <option value="Jazz"></option>
+                                <option value="Métal"></option>
+                                <option value="Pop"></option>
+                                <option value="Punk"></option>
+                                <option value="Rap"></option>
+                                <option value="Reggae"></option>
+                                <option value="Rock"></option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="image">Import Image</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-imput" id="image">
+                                <label for="image" class="custom-file-label">Choix du répertoire</label>
+                            </div>
+                            <small class="form-text text-muted">Taille maxi 3mb</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="boby"></label>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- TABLEAU -->
     <div class="container">
         <div class="row">
@@ -54,9 +123,9 @@
                         <thead>
                             <tr>
                                 <th class="col1" scope="col"></th>
-                                <th class="col2" scope="col">Titre</th>
-                                <th class="col3" scope="col">Groupe</th>
-                                <th class="col4" scope="col">Nbre de Vue</th>
+                                <th class="col2" scope="col">Artiste</th>
+                                <th class="col3" scope="col">Album</th>
+                                <th class="col4" scope="col">Genre</th>
                                 <th class="col5" scope="col">Nbre de Commentaires</th>
                                 <th class="col6" scope="col">Paramètres</th>
                             </tr>
@@ -68,16 +137,20 @@
                                 <td>Otto</td>
                                 <td>3</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
-                            </tr>      
+                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
+                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                            </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Jacob</td>
                                 <td>Thornton</td>
                                 <td>50</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
-                                
+                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
+                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
@@ -85,7 +158,9 @@
                                 <td>the Bird</td>
                                 <td>26</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
+                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
@@ -93,7 +168,9 @@
                                 <td>the Bird</td>
                                 <td>26</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
+                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">5</th>
@@ -101,7 +178,9 @@
                                 <td>the Bird</td>
                                 <td>26</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
+                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">6</th>
@@ -109,7 +188,9 @@
                                 <td>the Bird</td>
                                 <td>26</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
+                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">7</th>
@@ -117,7 +198,9 @@
                                 <td>the Bird</td>
                                 <td>26</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
+                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">8</th>
@@ -125,7 +208,9 @@
                                 <td>the Bird</td>
                                 <td>26</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
+                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">9</th>
@@ -133,7 +218,9 @@
                                 <td>the Bird</td>
                                 <td>26</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
+                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <th scope="row">10</th>
@@ -141,7 +228,9 @@
                                 <td>the Bird</td>
                                 <td>26</td>
                                 <td>12</td>
-                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                                <td><a href="#"><i class="fas fa-eye"></i></a><a href="#"><i
+                                            class="fas fa-pen"></i></a><a href="#"><i class="fas fa-trash-alt"></i></a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
