@@ -9,18 +9,27 @@ body{
     background-color: white;
 }
 
+p{
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    
+}
 
 /* NAVBAR */
 .navbar{
     background-color: white;
+}
+
+.navbar-brand{
+    font-size: 50px !important;
 }
 .navbar img{
     width: 10%;
 }
 
 .navbar a{
-    font-family: Merriweather400i;
-    font-size: 30px;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
     margin-left: 20px;
 }
 
@@ -30,6 +39,9 @@ body{
     background-position: center;
     background-size: cover;
 }
+/* LES NOUVEAUTES */
+
+
 
 /* BUTTON */
 
