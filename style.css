@@ -44,7 +44,11 @@ h3{
 }
 /* LES NOUVEAUTES */
 
+/* COMMUNAUTE */
 
+.com{
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
 
 /* BUTTON */
 
